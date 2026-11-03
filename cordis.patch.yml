@@ -1,0 +1,5 @@
+# WenKai font bundle layer: inserts the Host half that serves the packaged
+# LXGW WenKai web font and adds its stylesheet to the Harness index document.
+- insert:
+    - id: wenkai-font
+      name: dsh-plugin-wenkai-font

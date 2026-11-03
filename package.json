@@ -1,0 +1,56 @@
+{
+  "name": "dsh-plugin-wenkai-font",
+  "version": "1.0.0",
+  "description": "Switches the DeepSeek Harness text font to LXGW WenKai (霞鹜文楷), with the web font bundled for offline use.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "assets/font.css",
+    "assets/fonts/*.woff2",
+    "assets/fonts/OFL.txt",
+    "locale/*.json",
+    "icon.svg",
+    "assets/icon-180.png",
+    "README.md",
+    "FONT-LICENSES.md",
+    "LICENSE"
+  ],
+  "icon": "./icon.svg",
+  "license": "MIT",
+  "author": "AaronOhO",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "font",
+    "lxgw-wenkai",
+    "霞鹜文楷"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AaronOhO/dsh-plugin-wenkai-font.git"
+  },
+  "homepage": "https://github.com/AaronOhO/dsh-plugin-wenkai-font#readme",
+  "bugs": {
+    "url": "https://github.com/AaronOhO/dsh-plugin-wenkai-font/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
