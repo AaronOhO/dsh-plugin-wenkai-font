@@ -31,7 +31,7 @@ Or install this directory with Plugin Manager's `install_bundle`. Reload the pag
 | Stylesheet | `assets/font.css` | 97 `@font-face` rules: `src` first tries `local("LXGW WenKai")` / `local("LXGWWenKai-Regular")` / `local("霞鹜文楷")`, then the packaged subset; ends with `:root{--dsh-font-family-text:"LXGW WenKai","霞鹜文楷"}`. |
 | Font assets | `assets/fonts/*.woff2` | LXGW WenKai Regular (400) split into woff2 subsets by `unicode-range`, copied byte-for-byte from `lxgw-wenkai-webfont@1.7.0` (upstream v1.250); the OFL text ships alongside. |
 | Bundle manifest | [package.json](package.json) / [cordis.patch.yml](cordis.patch.yml) | `dsh.bundle.patch` inserts the `wenkai-font` row; `dsh.client` declares the browser half. |
-| Display metadata | [locale/](locale) / [icon.svg](icon.svg) | Title, description, and icon shown by Plugin Manager. |
+| Display metadata | [locale/](locale) / [icon.png](icon.png) | Title, description, and icon shown by Plugin Manager. |
 
 | 部分 | 文件 | 作用 |
 |---|---|---|
@@ -40,7 +40,7 @@ Or install this directory with Plugin Manager's `install_bundle`. Reload the pag
 | 样式表 | `assets/font.css` | 97 条 `@font-face`：`src` 先尝试 `local(...)`，再回退到内置分片；末尾 `:root{--dsh-font-family-text:"LXGW WenKai","霞鹜文楷"}` |
 | 字体资源 | `assets/fonts/*.woff2` | 霞鹜文楷 Regular（400）按 unicode-range 切分的 woff2 分片，逐字节复制；OFL 文本随附 |
 | Bundle 清单 | [package.json](package.json) / [cordis.patch.yml](cordis.patch.yml) | `dsh.bundle.patch` 插入 `wenkai-font` 行；`dsh.client` 声明浏览器半 |
-| 显示元数据 | [locale/](locale) / [icon.svg](icon.svg) | 插件管理器中的标题、说明与图标 |
+| 显示元数据 | [locale/](locale) / [icon.png](icon.png) | 插件管理器中的标题、说明与图标 |
 
 No tools, conversation rows, slots, or settings namespaces are modified. Disabling or uninstalling the plugin removes the route, the index injection, and the client stylesheet, and the default font returns.
 
